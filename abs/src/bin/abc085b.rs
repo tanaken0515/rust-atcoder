@@ -1,3 +1,12 @@
+use proconio::input;
+
 fn main() {
-    unimplemented!();
+    input! {
+        n: u32,
+        mut d: [u32; n],
+    }
+
+    d.sort();
+    d.dedup();
+    println!("{}", d.len())
 }
